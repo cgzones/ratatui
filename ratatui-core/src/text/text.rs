@@ -687,6 +687,7 @@ where
 /// [`Display`]: std::fmt::Display
 pub trait ToText {
     /// Converts the value to a [`Text`].
+    #[must_use]
     fn to_text(&self) -> Text<'_>;
 }
 
